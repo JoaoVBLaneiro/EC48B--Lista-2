@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+<div class="container">
+    <h1>Login 🔐</h1>
+    <form action="/login" method="POST">
+        <input type="text" name="usuario" placeholder="Usuário">
+        <input type="password" name="senha" placeholder="Senha">
+        <button type="submit">Entrar</button>
+    </form>
+    {{#mensagem}}
+    <p>{{mensagem}}</p>
+    {{/mensagem}}
+
+    <br>
+
+    <a href="{{landingLink}}">Voltar para o Início</a>
+</div>
+</body>
+
+<div id="footer">
+    <p>Created by <a href="https://joaovblaneiro.github.io/js-developer-portfolio/" target="_blank" class="surprise">João Laneiro</a> 2024 <a href="https://github.com/JoaoVBLaneiro" target="_blank"><i class="fa-brands fa-github" style="color: green;"></i></a></p>
+</div>
+
+</html>
