@@ -6,6 +6,13 @@ app.engine('mustache', mustacheExpress());
 app.set('view engine', 'mustache');
 app.set('views', __dirname + '/views');
 
+app.use(express.static(__dirname + "/public", {
+    index: false, 
+    immutable: true, 
+    cacheControl: true,
+    maxAge: "30d"
+}));
+
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 
